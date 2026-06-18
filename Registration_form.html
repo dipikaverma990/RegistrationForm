@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            width: 500px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        label{
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .name-row{
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-row select{
+            width: 25%;
+        }
+
+        .name-row input{
+            width: 75%;
+        }
+
+        .gender{
+            margin-top: 8px;
+        }
+
+        .gender input{
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Name</label>
+        <div class="name-row">
+            <select>
+                <option>Mr.</option>
+                <option>Miss.</option>
+                <option>Mrs.</option>
+            </select>
+
+            <input type="text" placeholder="First Name" required>
+        </div>
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required>
+
+        <label>Post</label>
+        <select>
+            <option>Select Post</option>
+            <option>Fresher</option>
+            <option>Intern</option>
+            <option>Senior</option>
+        </select>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter Address"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
