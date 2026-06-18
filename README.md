@@ -1,2 +1,14 @@
-# RegistrationForm
-Registration form project with user details, course selection, and address fields.
+
+# Registration Form
+
+A simple registration form built using HTML and CSS.
+
+## Features
+- Name
+- Email
+- Phone Number
+- Post Selection
+- Gender Selection
+- Course Selection
+- Address Field
+- Submit Button
